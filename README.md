@@ -4,10 +4,11 @@ A plugin to integrate [Paperclip](https://github.com/thoughtbot/paperclip) field
 
 # Instructions
 
-Add `administrate-field-paperclip` to your Gemfile:
+Add `administrate-field-paperclip` and `paperclip` to your Gemfile:
 
 ```
 gem 'administrate-field-paperclip'
+gem 'paperclip'
 ```
 
 Install:
