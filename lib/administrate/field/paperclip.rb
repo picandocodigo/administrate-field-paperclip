@@ -3,7 +3,7 @@ require 'rails'
 
 module Administrate
   module Field
-    class PaperclipField < Administrate::Field::Base
+    class Paperclip < Administrate::Field::Base
       def url
         data.url
       end
