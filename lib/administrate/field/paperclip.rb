@@ -4,9 +4,7 @@ require 'rails'
 module Administrate
   module Field
     class Paperclip < Administrate::Field::Base
-      def url
-        data.url
-      end
+      delegate :url, to: :data
 
       def thumbnail
         data.url(:thumbnail)
