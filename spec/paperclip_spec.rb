@@ -1,4 +1,5 @@
-require "administrate/field/paperclip"
+require 'spec_helper'
+require 'administrate/field/paperclip'
 
 describe Administrate::Field::Paperclip do
   describe '#to_partial_path' do

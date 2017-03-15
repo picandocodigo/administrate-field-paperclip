@@ -17,5 +17,8 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'administrate', '~> 0.4'
   gem.add_dependency 'rails', '~> 5.0'
 
+  gem.add_development_dependency 'coveralls'
   gem.add_development_dependency 'rspec', '~> 3.5'
+  gem.add_development_dependency 'rubocop'
+  gem.add_development_dependency 'simplecov'
 end
