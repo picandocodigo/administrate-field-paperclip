@@ -17,9 +17,23 @@ Install:
 $ bundle install
 ```
 
+## Usage
+
 Follow the [instructions on Paperclip](https://github.com/thoughtbot/paperclip#quick-start) to get started with your models and migrations. Once you've added the Paperclip attribute to your models, edit your Administrate dashboards. If you added 'avatar' to 'User', then you should:
 
-* Add `avatar: Field::Paperclip` to `ATTRIBUTE_TYPES`.
-* Add `:avatar` to `FORM_ATTRIBUTES`, `SHOW_PAGE_ATTRIBUTES` and (optionally) `COLLECTION_ATTRIBUTES`.
+```ruby
+class UserDashboard < Administrate::BaseDashboard
+  ATTRIBUTE_TYPES = {
+    avatar: Field::Paperclip,
+  }
+# ...
+```
+
+Then add `:avatar` to `FORM_ATTRIBUTES`, `SHOW_PAGE_ATTRIBUTES` and (optionally) `COLLECTION_ATTRIBUTES`.
+
+You can provide the field with options using `Field::Paperclip.with_options(options)`:
+
+* `thumbnail_style` (defaults to `'thumbnail'`) to control what image style is used to display the image in collection views
+* `big_style` (defaults to `'original'`) to control what image style is used to display the image on the show page.
 
 Based on the [Administrate::Field::Image](https://github.com/thoughtbot/administrate-field-image) template.
