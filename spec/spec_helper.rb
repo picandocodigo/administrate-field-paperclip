@@ -8,9 +8,12 @@ require 'administrate/field/paperclip'
 require 'paperclip'
 require 'fog'
 Paperclip::Attachment.default_options[:storage] = :fog
-Paperclip::Attachment.default_options[:fog_credentials] = { provider: "Local", local_root: File.join(__FILE__, '../processed_images')}
-Paperclip::Attachment.default_options[:fog_directory] = ""
-Paperclip::Attachment.default_options[:fog_host] = "http://localhost:3000"
+Paperclip::Attachment.default_options[:fog_credentials] = {
+  provider: 'Local',
+  local_root: File.join(__FILE__, '../processed_images'),
+}
+Paperclip::Attachment.default_options[:fog_directory] = ''
+Paperclip::Attachment.default_options[:fog_host] = 'http://localhost:3000'
 
 # enable debugging using byebug
 require 'byebug'
@@ -32,5 +35,3 @@ RSpec.configure do |config|
     FactoryGirl.find_definitions
   end
 end
-
-

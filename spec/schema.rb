@@ -3,7 +3,6 @@ require 'paperclip'
 
 include Paperclip::Schema
 ActiveRecord::Schema.define do
-
   self.verbose = false
 
   create_table :posts, force: true do |t|
