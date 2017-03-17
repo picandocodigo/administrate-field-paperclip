@@ -6,6 +6,8 @@ RSpec.describe Administrate::Field::Paperclip do
   let(:field) { described_class.new(:image, post.image, page) }
   let(:empty_field) { described_class.new(:image, nil, page) }
 
+  require 'administrate/field/paperclip'
+
   describe '#to_partial_path' do
     it 'returns a partial based on the page being rendered' do
       expect(empty_field.to_partial_path).to eq("/fields/paperclip/#{page}")

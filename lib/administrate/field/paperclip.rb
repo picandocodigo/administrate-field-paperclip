@@ -11,6 +11,8 @@ module Administrate
         data.try(:url, size) || ''
       end
 
+      delegate :url, to: :data
+
       def thumbnail
         style(thumbnail_style)
       end

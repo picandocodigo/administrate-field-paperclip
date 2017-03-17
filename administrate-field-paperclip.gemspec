@@ -1,4 +1,4 @@
-$:.push File.expand_path('../lib', __FILE__)
+$LOAD_PATH.push File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name = 'administrate-field-paperclip'
@@ -21,6 +21,9 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'factory_girl'
   gem.add_development_dependency 'fog'
   gem.add_development_dependency 'paperclip'
-  gem.add_development_dependency 'rspec', '~> 3.5'
   gem.add_development_dependency 'sqlite3'
+  gem.add_development_dependency 'coveralls'
+  gem.add_development_dependency 'rspec', '~> 3.5'
+  gem.add_development_dependency 'rubocop'
+  gem.add_development_dependency 'simplecov'
 end
