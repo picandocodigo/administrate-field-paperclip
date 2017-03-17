@@ -17,5 +17,10 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'administrate', '~> 0.4'
   gem.add_dependency 'rails', '~> 5.0'
 
+  gem.add_development_dependency 'byebug'
+  gem.add_development_dependency 'factory_girl'
+  gem.add_development_dependency 'fog'
+  gem.add_development_dependency 'paperclip'
   gem.add_development_dependency 'rspec', '~> 3.5'
+  gem.add_development_dependency 'sqlite3'
 end
