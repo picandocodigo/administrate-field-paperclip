@@ -1,6 +1,9 @@
+# start coverage tracking
+require 'coveralls'
+require 'simplecov'
+SimpleCov.start
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'administrate/field/paperclip'
-
 # config Paperclip for testing purposes
 require 'paperclip'
 require 'fog'
@@ -29,3 +32,5 @@ RSpec.configure do |config|
     FactoryGirl.find_definitions
   end
 end
+
+
