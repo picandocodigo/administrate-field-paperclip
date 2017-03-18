@@ -16,6 +16,11 @@ module Administrate
       def thumbnail
         style(thumbnail_style)
       end
+      
+      # Just display the URL as a link, rather than trying to make it an image
+      def url_only?
+        options.fetch(:url_only, false)
+      end
 
       alias url style
 
