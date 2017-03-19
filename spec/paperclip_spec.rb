@@ -61,4 +61,19 @@ RSpec.describe Administrate::Field::Paperclip do
       end
     end
   end
+  
+  describe '#url_only?' do
+    context 'with no options' do
+      it 'should be false' do
+        expect(field.url_only?).to be false
+      end
+    end
+    context 'with url_only option true' do
+      let(:field) { described_class.new(:image, post.image, page, url_only: true) }
+      it 'should be true' do
+        expect(field.url_only?).to be true
+      end
+    end
+  end
+  
 end
