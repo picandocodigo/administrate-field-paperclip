@@ -61,7 +61,7 @@ RSpec.describe Administrate::Field::Paperclip do
       end
     end
   end
-  
+
   describe '#url_only?' do
     context 'with no options' do
       it 'should be false' do
@@ -75,5 +75,4 @@ RSpec.describe Administrate::Field::Paperclip do
       end
     end
   end
-  
 end

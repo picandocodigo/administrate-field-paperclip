@@ -37,4 +37,9 @@ You can provide the field with options using `Field::Paperclip.with_options(opti
 * `big_style` (defaults to `'original'`) to control what image style is used to display the image on the show page.
 * `url_only` (defaults to `false`) to show only a URL (as a link) instead of trying to display an image.
 
+## [Contributors](https://github.com/picandocodigo/administrate-field-paperclip/graphs/contributors)
+
+* Klas Eskilson - https://github.com/klaseskilson
+* Rich - https://github.com/pedantic-git
+
 Based on the [Administrate::Field::Image](https://github.com/thoughtbot/administrate-field-image) template.
