@@ -1,4 +1,7 @@
-class Post < ActiveRecord::Base
+class ApplicationRecord < ActiveRecord::Base
+  self.abstract_class = true
+end
+class Post < ApplicationRecord
   include Paperclip::Glue
 
   has_attached_file :image,

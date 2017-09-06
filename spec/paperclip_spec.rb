@@ -14,7 +14,7 @@ RSpec.describe Administrate::Field::Paperclip do
     end
   end
 
-  PAPECLIP_FIELD_METHODS = %w(style thumbnail url).freeze
+  PAPECLIP_FIELD_METHODS = %w[style thumbnail url].freeze
   PAPECLIP_FIELD_METHODS.each do |method|
     describe "##{method}" do
       context 'when inner_attribute is not set' do
