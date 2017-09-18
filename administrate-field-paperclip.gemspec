@@ -2,7 +2,7 @@ $LOAD_PATH.push File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name = 'administrate-field-paperclip'
-  gem.version = '0.0.4'
+  gem.version = '0.0.5'
   gem.authors = ['Fernando Briano']
   gem.email = ['fernando@picandocodigo.net']
   gem.homepage = 'https://github.com/picandocodigo/administrate-field-paperclip'
