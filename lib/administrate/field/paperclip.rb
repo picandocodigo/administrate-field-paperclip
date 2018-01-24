@@ -7,11 +7,15 @@ module Administrate
       class Engine < ::Rails::Engine
       end
 
+      def blank_text
+        options.fetch(:blank_text, DEFAULT_BLANK_TEXT)
+      end
+
       def style(size = big_style)
         data.try(:url, size) || ''
       end
 
-      delegate :url, to: :data
+      delegate :blank?, :url, to: :data
 
       def thumbnail
         style(thumbnail_style)
@@ -28,6 +32,7 @@ module Administrate
 
       DEFAULT_THUMBNAIL_STYLE = :thumbnail
       DEFAULT_BIG_STYLE = :original
+      DEFAULT_BLANK_TEXT = 'None'.freeze
 
       def thumbnail_style
         options.fetch(:thumbnail_style, DEFAULT_THUMBNAIL_STYLE)

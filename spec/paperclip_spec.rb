@@ -5,9 +5,18 @@ RSpec.describe Administrate::Field::Paperclip do
   let(:page) { :show }
   let(:field) { described_class.new(:image, post.image, page) }
   let(:empty_field) { described_class.new(:image, nil, page) }
-
+  let(:empty_text) { 'Empty text' }
+  let(:empty_field_with_blank_option) { described_class.new(:image, nil, page, blank_text: empty_text) }
   require 'administrate/field/paperclip'
 
+  describe '#blank_text' do
+    it 'returns None when blank_text option not set' do
+      expect(empty_field.blank_text).to eq('None')
+    end
+    it 'returns blank text option if set' do
+      expect(empty_field_with_blank_option.blank_text).to eq(empty_text)
+    end
+  end
   describe '#to_partial_path' do
     it 'returns a partial based on the page being rendered' do
       expect(empty_field.to_partial_path).to eq("/fields/paperclip/#{page}")
