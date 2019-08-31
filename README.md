@@ -1,5 +1,8 @@
 # Administrate::Field::Paperclip
 
+## Deprecated
+**[Paperclip is deprecated](https://thoughtbot.com/blog/closing-the-trombone)**
+
 A plugin to integrate [Paperclip](https://github.com/thoughtbot/paperclip) fields in [Administrate](https://github.com/thoughtbot/administrate).
 
 # Instructions
