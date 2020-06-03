@@ -1,6 +1,3 @@
-Rails:
-  Enabled: true
-
 Metrics/LineLength:
   Max: 120
 
@@ -14,6 +11,3 @@ Style/FrozenStringLiteralComment:
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
-
-Style/TrailingCommaInLiteral:
-  EnforcedStyleForMultiline: comma
