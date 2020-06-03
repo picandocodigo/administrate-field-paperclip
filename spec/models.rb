@@ -1,6 +1,7 @@
 class ApplicationRecord < ActiveRecord::Base
   self.abstract_class = true
 end
+
 class Post < ApplicationRecord
   include Paperclip::Glue
 
