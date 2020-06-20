@@ -5,7 +5,7 @@ SimpleCov.start 'rails' do
   refuse_coverage_drop
 
   formatter SimpleCov::Formatter::MultiFormatter.new([
-    SimpleCov::Formatter::HTMLFormatter,
-    Coveralls::SimpleCov::Formatter
-  ])
+                                                       SimpleCov::Formatter::HTMLFormatter,
+                                                       Coveralls::SimpleCov::Formatter
+                                                     ])
 end
