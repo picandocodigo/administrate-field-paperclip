@@ -8,7 +8,7 @@ class Post < ApplicationRecord
   has_attached_file :image,
                     styles: {
                       thumbnail: '4x4#',
-                      extra: '2x4>',
+                      extra: '2x4>'
                     }
 
   # validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
