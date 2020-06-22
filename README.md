@@ -1,17 +1,16 @@
 # Administrate::Field::Paperclip
 
-## Deprecated
-**[Paperclip is deprecated](https://thoughtbot.com/blog/closing-the-trombone)**
-
 A plugin to integrate [Paperclip](https://github.com/thoughtbot/paperclip) fields in [Administrate](https://github.com/thoughtbot/administrate).
+
+**[Paperclip has been deprecated](https://thoughtbot.com/blog/closing-the-trombone)**, so starting in version 0.0.6, this gem depends on [kt-paperclip](https://github.com/kreeti/kt-paperclip), an ongoing fork of Paperclip. If you're still using the deprecated version of Paperclip, version 0.0.5 should still work for you.
 
 # Instructions
 
-Add `administrate-field-paperclip` and `paperclip` to your Gemfile:
+Add `administrate-field-paperclip` and `kt-paperclip` to your Gemfile:
 
 ```
 gem 'administrate-field-paperclip'
-gem 'paperclip'
+gem 'kt-paperclip'
 ```
 
 Install:
@@ -22,7 +21,7 @@ $ bundle install
 
 ## Usage
 
-Follow the [instructions on Paperclip](https://github.com/thoughtbot/paperclip#quick-start) to get started with your models and migrations. Once you've added the Paperclip attribute to your models, edit your Administrate dashboards. If you added 'avatar' to 'User', then you should:
+Follow the [instructions on Paperclip](https://github.com/kreeti/kt-paperclip#quick-start) to get started with your models and migrations. Once you've added the Paperclip attribute to your models, edit your Administrate dashboards. If you added 'avatar' to 'User', then you should:
 
 ```ruby
 class UserDashboard < Administrate::BaseDashboard
