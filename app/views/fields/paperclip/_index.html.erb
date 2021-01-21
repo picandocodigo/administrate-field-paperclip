@@ -1,4 +1,6 @@
-<% if field.url_only? -%>
+<% if field.blank? -%>
+None
+<% elsif field.url_only? -%>
 <%= link_to field.url, field.url if field.url.present? %>
 <% else -%>
 <%= image_tag field.thumbnail %>

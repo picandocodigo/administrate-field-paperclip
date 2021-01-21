@@ -11,6 +11,10 @@ module Administrate
         data.try(:url, size) || ''
       end
 
+      def blank?
+        data.blank?
+      end
+
       delegate :url, to: :data
 
       def thumbnail
